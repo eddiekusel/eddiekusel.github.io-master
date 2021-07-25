@@ -1,0 +1,12 @@
+# MTL Exporter v1.0 by Seungwoo Oh at CLO - Virtual Fashion Inc.
+newmtl Fleece_Terry_FRONT_2241
+Ka 0.247048 0.206357 0.216531
+Kd 0.960784 0.802533 0.842100
+Ks 0.075000 0.075000 0.075000
+Ns 28.763239
+illum 2
+d 1.000000
+map_Ka dark_purple_knit_DESATURATION.png
+map_Kd dark_purple_knit_DESATURATION.png
+map_Kn dark_purple_knit_2252.jpg
+map_Bump dark_purple_knit_NRM_68.jpg
