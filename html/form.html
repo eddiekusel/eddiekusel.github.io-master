@@ -10,25 +10,28 @@
     <title>Sans</title>
   </head>
   <body>
-      <form>
-    <div class="mb-3">
-      <label for="name" class="form-label">Full Name</label>
-      <input type="name" name="name" class="form-control" id="inputName" aria-describedby="email">
-    </div>
-    <div class="mb-3">
-      <label for="email" class="form-label">Email</label>
-      <input type="email" name="email" class="form-control" id="inputEmail">
-    </div>
-    <div class="mb-3">
-      <label for="pant-length" class="form-label">What length pants do you wear?</label>
-      <input type="length" name="pant-length" class="form-control" id="pantLength">
-    </div>
-    <div class="mb-3">
-      <label for="waist-length" class="form-label">What is your waist size?</label>
-      <input type="length" name="waist-length" class="form-control" id="waistLength">
-    </div>
-    <button onclick="compute()" formaction="formTwo.html" type="submit" class="btn btn-primary" >Submit</button>
-  </form>
+      <!-- start form -->
+      <!-- use php and post method -->
+      <form action="../php/connect.php" method="post">
+          <div class="mb-3">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="name" name="name" class="form-control" id="inputName" aria-describedby="email">
+          </div>
+          <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" name="email" class="form-control" id="inputEmail">
+          </div>
+          <div class="mb-3">
+              <label for="pant-length" class="form-label">What length pants do you wear?</label>
+              <input type="length" name="pant-length" class="form-control" id="pantLength">
+          </div>
+          <div class="mb-3">
+              <label for="waist-length" class="form-label">What is your waist size?</label>
+              <input type="length" name="waist-length" class="form-control" id="waistLength">
+          </div>
+          <button onclick="compute()" formaction="formTwo.html" type="submit" class="btn btn-primary" >Submit</button>
+      </form>
+    <!-- end form -->
   
   <script>
     function compute() {
