@@ -28,14 +28,14 @@
     e.preventDefault();
     // Get Values from the DOM
 
-    
       var name = getInputVal('nameField');
       var email = getInputVal('emailField');
       var pantLength = getInputVal('pantLengthField');
       var waistLength = getInputVal('waistLengthField');
+      var bust = getInputVal('bust');
   
     //send message values
-    sendMessage(name, email, pantLength, waistLength);
+    sendMessage(name, email, pantLength, waistLength, bust);
  
   
     //Form Reset After Submission(7)
@@ -48,12 +48,13 @@
   
   //Send Message to Firebase(4)
   
-  function sendMessage(name, email, pantLength, waistLength) {
+  function sendMessage(name, email, pantLength, waistLength, bust) {
     let newFormMessage = formMessage.push();
     newFormMessage.set({
         name: name,
         email:email,
         pantLength:pantLength,
         waistLength:waistLength,
+        bust: bust
     });
   }
