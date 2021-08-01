@@ -35,14 +35,14 @@
       var age = getInputVal('age');
       var height = getInputVal('height');
       var weight = getInputVal('weight');
-      var braChest = getInputVal('braChest');
+      var braBand = getInputVal('braBand');
       var braCup = getInputVal('braCup');
       var dress = getInputVal('dress');
       var pant = getInputVal('pant');
       
   
     //send message values
-    sendMessage(name, email, age, height, weight, braChest, braCup, dress, pant);
+    sendMessage(name, email, age, height, weight, braBand, braCup, dress, pant);
  
   
     //Form Reset After Submission(7)
@@ -55,7 +55,7 @@
   
   //Send Message to Firebase(4)
   
-  function sendMessage(name, email, age, height, weight, braChest, braCup, dress, pant) {
+  function sendMessage(name, email, age, height, weight, braBand, braCup, dress, pant) {
     let newFormMessage = formMessage.push();
     newFormMessage.set({
         name: name,
@@ -63,7 +63,7 @@
         age: age,
         height: height,
         weight: weight,
-        braChest: braChest,
+        braBand: braBand,
         braCup: braCup,
         dress: dress,
         pant: pant
