@@ -28,14 +28,21 @@
     e.preventDefault();
     // Get Values from the DOM
 
-      var name = getInputVal('nameField');
-      var email = getInputVal('emailField');
-      var pantLength = getInputVal('pantLengthField');
-      var waistLength = getInputVal('waistLengthField');
-      var bust = getInputVal('bust');
+      var name = getInputVal('name');
+      var email = getInputVal('email');
+      // var pantLength = getInputVal('pantLengthField');
+      // var waistLength = getInputVal('waistLengthField');
+      var age = getInputVal('age');
+      var height = getInputVal('height');
+      var weight = getInputVal('weight');
+      var braChest = getInputVal('braChest');
+      var braCup = getInputVal('braCup');
+      var dress = getInputVal('dress');
+      var pant = getInputVal('pant');
+      
   
     //send message values
-    sendMessage(name, email, pantLength, waistLength, bust);
+    sendMessage(name, email, age, height, weight, braChest, braCup, dress, pant);
  
   
     //Form Reset After Submission(7)
@@ -48,13 +55,19 @@
   
   //Send Message to Firebase(4)
   
-  function sendMessage(name, email, pantLength, waistLength, bust) {
+  function sendMessage(name, email, age, height, weight, braChest, braCup, dress, pant) {
     let newFormMessage = formMessage.push();
     newFormMessage.set({
         name: name,
         email:email,
-        pantLength:pantLength,
-        waistLength:waistLength,
-        bust: bust
+        age: age,
+        height: height,
+        weight: weight,
+        braChest: braChest,
+        braCup: braCup,
+        dress: dress,
+        pant: pant
+        // pantLength:pantLength,
+        // waistLength:waistLength,
     });
   }
