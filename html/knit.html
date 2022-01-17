@@ -102,7 +102,8 @@
                       mtl.preload();
                       const objLoader = new THREE.OBJLoader();
                       objLoader.setMaterials(mtl);
-                      objLoader.load('../3d-files/knit.obj', (root) => {
+//                       objLoader.load('../3d-files/knit.obj', (root) => {
+                      objLoader.load('eddiekusel.github.io/resources/knit.obj', (root) => {
                           root.updateMatrixWorld();
                           scene.add(root);
                           // compute the box that contains all the stuff
