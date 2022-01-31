@@ -75,7 +75,7 @@
 
               {
                   const mtlLoader = new THREE.MTLLoader();
-                  mtlLoader.load('../3d-files/hooide.mtl', (mtl) => {
+                  mtlLoader.load('../3d-files/hoodie.mtl', (mtl) => {
                       mtl.preload();
                       const objLoader = new THREE.OBJLoader();
                       objLoader.setMaterials(mtl);
